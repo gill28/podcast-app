@@ -38,7 +38,7 @@
 .podcastItem {
   position: relative;
   margin: 0 20px;
-  padding: 0px 25px 25px 25px;
+  padding: 25px;
   max-width: 701px;
   margin-bottom: 30px;
   background-color: #fff;
@@ -46,6 +46,7 @@
 
   @media (min-width: $breakpoint-tablet) {
     display: flex;
+    justify-content: space-between;
   }
 
   &-wrapper {
@@ -88,9 +89,10 @@
     }
     &-relatedLinks {
       display: flex;
-      justify-content: space-between;
-      margin: 0 10px;
       li {
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
         i {
           vertical-align: baseline;
         }
@@ -116,10 +118,9 @@
       font-family: $workSans;
       font-size: 0.875rem;
       margin: 0;
-      padding-top: 30px;
     }
     @media (min-width: $breakpoint-tablet) {
-      max-width: 300px;
+      max-width: 214px;
       margin-left: 30px;
     }
   }
