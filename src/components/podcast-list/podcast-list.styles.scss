@@ -15,7 +15,7 @@
     content: '' counter(my-sec-counter) '';
     max-width: 50px;
     max-height: 50px;
-    right: 91%;
+    right: 93%;
     top: -20px;
     position: absolute;
     background-image: linear-gradient(#fd741b, #a300bb);
@@ -25,10 +25,12 @@
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
+    @media (min-width: $breakpoint-tablet) {
+      right: 97%;
+    }
     @media (min-width: $breakpoint-desktop) {
       top: 0;
       left: -90px;
-      right: auto;
       font-size: 1.875rem;
       padding: 0 13px;
     }
@@ -114,10 +116,16 @@
   &-description {
     width: 100%;
     p {
-      word-wrap: break-word;
+      max-height: 147px;
+      overflow: hidden;
+      text-overflow: ellipsis;
       font-family: $workSans;
       font-size: 0.875rem;
       margin: 0;
+      padding-top: 30px;
+      @media (min-width: $breakpoint-tablet) {
+        padding-top: 0;
+      }
     }
     @media (min-width: $breakpoint-tablet) {
       max-width: 214px;
