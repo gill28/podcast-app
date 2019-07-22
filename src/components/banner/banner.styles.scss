@@ -28,7 +28,7 @@ h1 {
     &-circle {
       position: absolute;
       bottom: 35%;
-      left: 45%;
+      left: 62%;
       @media (min-width: $breakpoint-tablet) {
         bottom: 17%;
         left: 56%;
@@ -40,6 +40,7 @@ h1 {
       left: 70%;
       @media (min-width: $breakpoint-tablet) {
         top: 30%;
+        left: 66%;
       }
     }
   }
@@ -64,15 +65,14 @@ h1 {
       }
     }
     &-image {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
       width: 100%;
       height: 100%;
       margin: 0;
       padding: 0;
       border: 0;
-      @media (min-width: $breakpoint-tablet) {
-        display: flex;
-        align-items: flex-end;
-      }
     }
   }
 }

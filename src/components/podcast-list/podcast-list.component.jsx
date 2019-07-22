@@ -30,8 +30,6 @@ class PodcastList extends Component {
   }
   render() {
     const items = this.state.data;
-    let i = 0;
-    console.log(items);
     return (
       <div className="wrapper">
         <ol className="podcastList">
@@ -86,7 +84,6 @@ class PodcastList extends Component {
                   </ul>
                 </div>
               </div>
-
               <div className="podcastItem-description">
                 <p>{item.description_original}</p>
               </div>
