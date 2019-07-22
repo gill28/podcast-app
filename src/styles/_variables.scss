@@ -1,0 +1,17 @@
+// Importing all necessary fonts 
+@import url('https://fonts.googleapis.com/css?family=Space+Mono|Work+Sans&display=swap');
+
+// Font Variables
+$spaceMono: 'Space Mono', monospace;
+$workSans: 'Work Sans', sans-serif;
+
+// Font Weight
+$fontBold: bold;
+$fontLight: lighter;
+
+
+// Breakpoints
+$breakpoint-tablet: 768px;
+$breakpoint-mobile: 320px;
+$breakpoint-desktop: 1025px;
+$breakpoint-desktop-higher: 1281px;
