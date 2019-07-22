@@ -115,11 +115,12 @@
       word-wrap: break-word;
       font-family: $workSans;
       font-size: 0.875rem;
+      margin: 0;
+      padding-top: 30px;
     }
     @media (min-width: $breakpoint-tablet) {
-      margin-left: 30px;
       max-width: 300px;
-      padding-top: 10px;
+      margin-left: 30px;
     }
   }
 }
