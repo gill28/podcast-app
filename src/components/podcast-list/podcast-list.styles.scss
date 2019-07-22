@@ -1,5 +1,6 @@
 @import '../../styles/variables.scss';
 
+// Styling for the podcatst List
 .wrapper {
   width: 100%;
   max-width: 810px;
@@ -12,6 +13,8 @@
   li.podcastItem::before {
     counter-increment: my-sec-counter;
     content: '' counter(my-sec-counter) '';
+    max-width: 50px;
+    max-height: 50px;
     right: 91%;
     top: -20px;
     position: absolute;
@@ -22,6 +25,13 @@
     color: #fff;
     font-size: 1.3rem;
     font-weight: bold;
+    @media (min-width: $breakpoint-desktop) {
+      top: 0;
+      left: -90px;
+      right: auto;
+      font-size: 1.875rem;
+      padding: 0 13px;
+    }
   }
 }
 
@@ -29,29 +39,52 @@
   position: relative;
   margin: 0 20px;
   padding: 0px 25px 25px 25px;
-  // justify-content: space-between;
-  // align-items: center;
+  max-width: 701px;
   margin-bottom: 30px;
   background-color: #fff;
   box-shadow: 0 0 10px rgba(165, 2, 186, 0.4);
+
+  @media (min-width: $breakpoint-tablet) {
+    display: flex;
+  }
+
   &-wrapper {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    a {
+      img:hover {
+        box-shadow: 2px 2px 5px #000;
+      }
+    }
   }
+
   &-figure {
     width: 106px;
     height: 106px;
     position: relative;
     left: -40px;
+    bottom: 25px;
+    @media (min-width: $breakpoint-tablet) {
+      width: 145px;
+      height: 145px;
+      left: -60px;
+    }
   }
 
   &-bd {
+    max-width: 300px;
     h2 {
       font-size: 1.875rem;
     }
     &-authors {
       color: $linkPurple;
+      span {
+        color: #000;
+      }
+    }
+    &-episodeCount {
+      margin-bottom: 20px;
     }
     &-relatedLinks {
       display: flex;
@@ -66,10 +99,27 @@
           color: #777;
           font-weight: $fontBold;
           text-transform: uppercase;
-          font-size: 12px;
+          font-size: 0.75rem;
           margin-left: 5px;
+          &:hover {
+            color: #000;
+          }
         }
       }
+    }
+  }
+
+  &-description {
+    width: 100%;
+    p {
+      word-wrap: break-word;
+      font-family: $workSans;
+      font-size: 0.875rem;
+    }
+    @media (min-width: $breakpoint-tablet) {
+      margin-left: 30px;
+      max-width: 300px;
+      padding-top: 10px;
     }
   }
 }

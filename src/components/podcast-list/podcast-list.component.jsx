@@ -7,6 +7,8 @@ import './podcast-list.styles.scss';
 
 const unirest = require('unirest');
 
+// Using component state for the data since a state manager (aka. redux) seemed like overkill for the solution
+
 class PodcastList extends Component {
   constructor() {
     super();
@@ -36,15 +38,20 @@ class PodcastList extends Component {
           {items.map((item, key) => (
             <li className="podcastItem" key={key}>
               <div className="podcastItem-wrapper">
-                <img
-                  src={item.thumbnail}
-                  alt=""
-                  className="podcastItem-figure"
-                />
+                <a href={item.listennotes_url}>
+                  <img
+                    src={item.thumbnail}
+                    alt=""
+                    className="podcastItem-figure"
+                  />
+                </a>
                 <div className="podcastItem-bd">
                   <h2>{item.title_original}</h2>
                   <div className="podcastItem-bd-authors">
-                    <span>{item.publisher_highlighted}</span>
+                    <p>
+                      <span>by </span>
+                      {item.publisher_highlighted}
+                    </p>
                   </div>
                   <div className="podcastItem-bd-episodeCount">
                     {item.total_episodes} <span>episodes</span>
