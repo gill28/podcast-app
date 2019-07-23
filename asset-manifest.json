@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/podacast-app/static/css/main.9969c501.chunk.css",
+    "main.js": "/podacast-app/static/js/main.871dbafc.chunk.js",
+    "main.js.map": "/podacast-app/static/js/main.871dbafc.chunk.js.map",
+    "runtime~main.js": "/podacast-app/static/js/runtime~main.d7f98933.js",
+    "runtime~main.js.map": "/podacast-app/static/js/runtime~main.d7f98933.js.map",
+    "static/js/2.1bc7d603.chunk.js": "/podacast-app/static/js/2.1bc7d603.chunk.js",
+    "static/js/2.1bc7d603.chunk.js.map": "/podacast-app/static/js/2.1bc7d603.chunk.js.map",
+    "index.html": "/podacast-app/index.html",
+    "precache-manifest.4706e8f76b1a16c07a8e3045d4df080f.js": "/podacast-app/precache-manifest.4706e8f76b1a16c07a8e3045d4df080f.js",
+    "service-worker.js": "/podacast-app/service-worker.js",
+    "static/css/main.9969c501.chunk.css.map": "/podacast-app/static/css/main.9969c501.chunk.css.map",
+    "static/media/apple.a2287c44.svg": "/podacast-app/static/media/apple.a2287c44.svg",
+    "static/media/circle.2cd96441.svg": "/podacast-app/static/media/circle.2cd96441.svg",
+    "static/media/link.959783d5.svg": "/podacast-app/static/media/link.959783d5.svg",
+    "static/media/rss.c2817d52.svg": "/podacast-app/static/media/rss.c2817d52.svg",
+    "static/media/text-gradient.png": "/podacast-app/static/media/text-gradient.f9e6a178.png",
+    "static/media/triangle.dacd3882.svg": "/podacast-app/static/media/triangle.dacd3882.svg"
+  }
+}
