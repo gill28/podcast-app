@@ -1,0 +1,9 @@
+{
+  "prettier.disableLanguages": ["vue", "html"],
+  "html.format.wrapAttributes": "force-aligned",
+  "prettier.jsxBracketSameLine": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.parser": "flow",
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 10000
+}

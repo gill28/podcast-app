@@ -14,11 +14,7 @@ class PodcastItems extends Component {
     };
   }
   async componentDidMount() {
-    const response = await unirest
-      .get(
-        'https://listen-api.listennotes.com/api/v2/search?q=web%20design&sort_by_date=1&type=podcast&offset=0&len_min=1&len_max=5&genre_ids=68%2C82&published_before=1390190241000&published_after=0&only_in=title%2Cdescription%2Cauthor&language=English&safe_mode=1'
-      )
-      .header('X-ListenAPI-Key', `${this.state.apiKey}`);
+    const response = await unirest.get('https://listen-api.listennotes.com/api/v2/search?q=web%20design&sort_by_date=1&type=podcast&offset=0&len_min=1&len_max=5&genre_ids=68%2C82&published_before=1390190241000&published_after=0&only_in=title%2Cdescription%2Cauthor&language=English&safe_mode=1').header('X-ListenAPI-Key', `${this.state.apiKey}`);
     this.setState({
       data: response.body.results
     });
@@ -32,11 +28,7 @@ class PodcastItems extends Component {
           <li className="podcastItem" key={key}>
             <div className="podcastItem-wrapper">
               <a href={item.listennotes_url}>
-                <img
-                  src={item.thumbnail}
-                  alt=""
-                  className="podcastItem-figure"
-                />
+                <img src={item.thumbnail} alt="" className="podcastItem-figure" />
               </a>
               <div className="podcastItem-bd">
                 <h2>{item.title_original}</h2>
@@ -55,14 +47,7 @@ class PodcastItems extends Component {
                     <i>
                       <Itunes />
                     </i>
-                    <a
-                      href={
-                        'https://podcasts.apple.com/us/podcast/id' +
-                        item.itunes_id
-                      }
-                    >
-                      Itunes
-                    </a>
+                    <a href={'https://podcasts.apple.com/us/podcast/id' + item.itunes_id}>Itunes</a>
                   </li>
                   <li>
                     <i>
